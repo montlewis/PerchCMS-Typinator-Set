@@ -1,26 +1,99 @@
 # PerchCMS-Typinator-Set
-Expansions for Perch CMS using Typinator 7+
+Expansions for Perch CMS using Typinator 7+.
 # Typinator
-Requires Typinator 7.
-http://www.ergonis.com/downloads/
+Requires Typinator 7. Typinator is an incredable text expansion tool and I can't recommend it more highly. It is Mac only, so sorry everyone else. You can get it here:Version 7 Greatly enhanced the dialogs and enables for really powerful expansions. Take a look, I think you will really like how Typinator and this expansion set enhance your Perch development.
+<http://www.ergonis.com/downloads/>
 
 #Setting it up
 Once you have Typinator installed, you can use its new subscribe function to connect to this set of Perch expansions.
 Under the Action menu, select Sets, and then select Subscribe to Set via URL...
 In the window that pops up, enter this address:
 
-  *https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/PerchCMS.typubset*
+  <https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/PerchCMS.typubset>
 
 So now the Perch expansion set should be in the sets panel of the Typinator application and you should be able to start using them!
 You can set which applications your expansion sets are active in. This is done with the little application icon under the list of sets.
-Also, there is one expansion pHelp\, that's pretty handy and calls up Typinator's quick search window for searching through the expansions. (the help one that searches though the expansions) that is set to {key:⌥⇧⌘"."} use a key command of shift-option-command-.(period). So you should go to Typinator's preferences and set the quick search to that set of keys.
+Also, there is one expansion `pHelp\`, that's pretty handy and calls up Typinator's quick search window for searching through the expansions. (the help one that searches though the expansions) that is set to `{key:⌥⇧⌘"."}` use a key command of `shift-option-command-.(period)`. So you should go to Typinator's preferences and set the quick search to that set of keys.
 
 So let's take a look at the exansions! **(Note: when you type an expansion, case doesn't matter. It's just added here for clarity)**
+
+#How it works
+So I tried to set up the expansions in a logical way so that learning them is as easy as possible. For working in templates, no matter which perch application you're in, you enter an abbreviations that begins with `pt` for Perch Template, followed by the field type you would like, followed by a trailing `\`. So the Abreviation `ptsmarttext\` will present a dialog that looks like this:
+
+![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_smarttext.png)
+
+First, you set the appspace. In this case, it's Content to create a `perch:content` tag. That selection in remembered through all the template dialogs until you change it, so you only need to worry about it when you change appspaces. Then you fill out the dialog box with the variables and setting you would like. When you hit ok, this is deivered to your editor:
+
+`<perch:content id="subheadtext" type="smarttext" label="Subhead Text" size="m" />`
+
+It only outputs the fields you specify but still shows you all the options that are available to you. So this expansion:
+
+![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_smarttext2.png)
+
+will output:
+
+`<perch:content id="subheadtext" type="smarttext" label="Subhead Text" required="true" size="xl" title="true" order="4" suppress="true" divider-before="Event Details" title="true" help="This title will appear in the capsule summary. " />`
+
+#Why I Love it
+The expansion set is designed to be smart. For example, if you create a field on a template using one of the `pt***\` expansions, and then do a `ptIf\` expansion:
+
+![Perch If](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_if_smarttext.png)
+
+It inserts the field ID for the field you last created in case that's what you wanted. so hiting enter delivers:
+
+`<perch:if exists="subheadtext">`
+
+Some of the expansions, like the Perch:If tag above, just create the opening tag. And to close the tag later, in your template you would use `\ptif`. Perch:before `ptb\` `\ptb`, perch:after `pta\` `\pta`, pearch:repeater `ptr\` `\ptr` and some others work that way as well.
+
+By the way, here's a list of what's available in the `perch:if` Special IDs dropdown:
+
+![Perch If Special IDs](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/if_options.png)
+
+Here's an example of an expansion that creates a `perch_content_custom` block:
+
+![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_content_custom.png)
+
+
+~~~~
+<?php
+  perch_content_custom('Birds', array(
+     'page'          => '/birds.php',
+     'template'      => '/birds/roosts.html',
+     'filter'        => 'feathered',
+     'match'         => 'eq',
+     'value'         => 'true',
+     'skip-template' => 'true',
+  ));
+?>
+~~~~
+
+First, there is an option to output the block as a single line, unaligned, or aligned. And only the field values that you specify are output to the editor. And the block is created based on your input. One caviat here is the Value attribute... The expansion will output quotes around the value field except when it is a `perch_get` function. So if you're doing something with variables here, or in fact, many of the other expansions, be aware that you may have to remove the quotes around values in those cases. Perhaps there's a way to improve upon this in the future.
+
+Another type of expansion provides more of a guide to Perch's attributes and functions. For example, here is a abreviation `psFunctions\` that presents the following:
+
+![SHOP FUNCTIONS](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/shop_functions.png)
+
+In the case of these expansions, it will drop an example function into your editor and optionally take you to that functions page in the Perch Documentation.
+
+The options here are:
+
+![SSOP FUNCTIONS LIST](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/shop_function_list.png)
+
+So, selecting `perch_shop_brands()` will output:
+
+`<?php perch_shop_brands(); ?>` to your editor and if the Open Perch Docs: Shop Functions is checked, will open a Safari window to that function’s page.
+
+
+
+#Hope you love it, too
+This is a work in progress. It's not a complete set of expansion, but it's pretty vast. If you use the subscribe function, I think that you will be updated anytime I make changes to the set on GitHub.
+
+If you find this useful, let me know. If there's a way to make it better, I’d love to hear that as well. Not sure what the best way to collaborate on something like this is, but we'll figure it out. Happy Perching!
 
 #Here's the list of expansions by group:
 ##Perch Termplating
 
-|Abreviation   | Exands to accomplish 
+|Abreviation   | Exands to 
 |:----------	| -----------
 | **appspace**\       | Set the Perch App Space                                                                                                     | 
 | pt**Block**\        | Creates a Perch Block within the Perch Blocks Framework                                                                     | 
@@ -61,14 +134,14 @@ So let's take a look at the exansions! **(Note: when you type an expansion, case
 | **suppress**\       | Adds the suppress tag for fields                                                                                            | 
 
 ##Blog Expansions
-|Abreviation   | Exands to accomplish 
+|Abreviation   | Exands to 
 |:----------	| -----------
 | pb**Custom**\       | Creates a Perch Blog Custom block                                                                                           | 
 | pb**Functions**\    | List of all the Perch Blog functions details.                                                                               | 
 | pb**URL**\          | Creates a perch:blog URL Tag                                                                                                | 
 
 ##Content Expansions
-|Abreviation   | Exands to accomplish 
+|Abreviation   | Exands to 
 |:----------	| -----------
 | pc**Create**\       | Creates a perch\_content\_create block                                                                                        | 
 | pc**Custom**\       | Create a perch\_content\_custom block                                                                                         | 
@@ -76,18 +149,33 @@ So let's take a look at the exansions! **(Note: when you type an expansion, case
 | pc**Get**\          | Outputs a perch\_content call                                                                                                | 
 
 ##Navigation Expansions
-|Abreviation   | Exands to accomplish 
+|Abreviation   | Exands to 
 |:----------	| -----------
 | pn**Functions**\    | A guide to the Perch Navigation Functions and Documentation                                                                 | 
 | pp**Atributes**\    | A guide to the Perch Page Attributes and Documentation                                                                      | 
 
 ##Layout Expansions
-|Abreviation   | Exands to accomplish 
+|Abreviation   | Exands to 
 |:----------	| -----------
 | p**Layout**\        | Use to make a call to perch_layout function with optional value pairs                                                       | 
 | pl**Functions**\    | A guide to the Perch Layout Functions and Documentation                                                                     | 
 
-|Abreviation   | Exands to accomplish 
+![MacDown Screenshot](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/search_perch.png)
+
+##Perch Site Interaction
+Many of the expansion dialogs have a checkbox at the bottom that enables you to open the page for that function or tag in the Perch Documentation. There is also a built in site search (`pS\`) as shown above.
+
+|Abreviation   | Exands to 
+|:----------	| -----------
+| /p**S**             | Searches the Perch Site, Documentation, and Forum                                                                                                       | 
+| p**News**\    | Opens the Grabaperch site news and current version pages                                                                     | 
+| p**Account**\    | Opens your account page at Grabaperch                                                                     | 
+
+
+
+#Complete list as of 12/15/16
+
+|Abreviation   | Exands to 
 |:----------	| -----------
 | /pA             | Closing Perch:After                                                                                                         | 
 | /pB             | Closing Perch:Before                                                                                                        | 
@@ -114,10 +202,9 @@ So let's take a look at the exansions! **(Note: when you type an expansion, case
 | pbURL\          | Creates a perch:blog URL Tag                                                                                                | 
 | pCat\           | Creates a perch_category() function to display a single category when passed a category path.                               | 
 | pCats\          | Creates a perch_categories() function to display a listing of your categories.                                              | 
-| pcCollection\   | Creates a perch_collection block                                                                                            | 
 | pcCreate\       | Creates a perch_content_create block                                                                                        | 
 | pcCustom\       | Create a perch_content_custom block                                                                                         | 
-| pcFunctions\    | A guide to the Perch Gallery Functions and Documentation                                                                    | 
+| pcFunctions\    | A guide to the Perch Content Functions and Documentation                                                                    | 
 | pcGet\          | Outputs a perch_content call                                                                                                | 
 | pConfigBuckets\ | Adds a configuration block to the buckets config file                                                                       | 
 | pConfigdebug\   | Turn on debugging in the main config file                                                                                   | 
