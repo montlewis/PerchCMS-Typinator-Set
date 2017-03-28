@@ -4,7 +4,7 @@ Expansions for Perch CMS using Typinator 7+.
 Requires Typinator 7. Typinator is an incredable text expansion tool and I can't recommend it more highly. It is Mac only, so sorry everyone else. You can get it here:Version 7 Greatly enhanced the dialogs and enables for really powerful expansions. Take a look, I think you will really like how Typinator and this expansion set enhance your Perch development.
 <http://www.ergonis.com/downloads/>
 
-#Setting it up
+# Setting it up
 Once you have Typinator installed, you can use its new subscribe function to connect to this set of Perch expansions.
 Under the Action menu, select Sets, and then select Subscribe to Set via URL...
 In the window that pops up, enter this address:
@@ -16,7 +16,7 @@ You can set which applications your expansion sets are active in. This is done w
 
 So let's take a look at the exansions! **(Note: when you type an expansion, case doesn't matter. It's just added here for clarity)**
 
-#How it works
+# How it works
 So I tried to set up the expansions in a logical way so that learning them is as easy as possible. For working in templates, no matter which perch application you're in, you enter an abbreviations that begins with `pt` for Perch Template, followed by the field type you would like, followed by a trailing `\`. So the Abreviation `ptsmarttext\` will present a dialog that looks like this:
 
 ![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_smarttext.png)
@@ -33,7 +33,7 @@ will output:
 
 `<perch:content id="subheadtext" type="smarttext" label="Subhead Text" required="true" size="xl" title="true" order="4" suppress="true" divider-before="Event Details" title="true" help="This title will appear in the capsule summary. " />`
 
-#If you ever get lost
+# If you ever get lost
 `pHelp/`
 If you ever get lost, typing 'pHelp\' will open Typinator's Quick Search window:
 
@@ -42,7 +42,7 @@ If you ever get lost, typing 'pHelp\' will open Typinator's Quick Search window:
 
 Typing some text (like 'template' shown above) will show the commands available... Then just click on the one you would like to open the expansion.
 
-#Why I Love it
+# Why I Love it
 The expansion set is designed to be smart. For example, if you create a field on a template using one of the `pt***\` expansions, and then do a `ptIf\` expansion:
 
 ![Perch If](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_if_smarttext.png)
@@ -78,7 +78,7 @@ Here's an example of an expansion that creates a `perch_content_custom` block:
 First, there is an option to output the block as a single line, unaligned, or aligned. And only the field values that you specify are output to the editor. And the block is created based on your input. One caviat here is the Value attribute... The expansion will output quotes around the value field except when it is a `perch_get` function. So if you're doing something with variables here, or in fact, many of the other expansions, be aware that you may have to remove the quotes around values in those cases. Perhaps there's a way to improve upon this in the future.
 
 
-##Function Guides
+## Function Guides
 Another type of expansion provides more of a guide to Perch's attributes and functions. For example, here is a abreviation `psFunctions\` that presents the following:
 
 ![SHOP FUNCTIONS](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/shop_functions.png)
@@ -95,13 +95,13 @@ So, selecting `perch_shop_brands()` will output:
 
 
 
-#Hope you love it, too
+# Hope you love it, too
 This is a work in progress. It's not a complete set of expansion, but it's pretty vast. If you use the subscribe function, I think that you will be updated anytime I make changes to the set on GitHub.
 
 If you find this useful, let me know. If there's a way to make it better, I’d love to hear that as well. Not sure what the best way to collaborate on something like this is, but we'll figure it out. Happy Perching!
 
-#Here's the list of expansions by group:
-##Perch Termplating
+# Here's the list of expansions by group:
+## Perch Termplating
 
 |Abreviation   | Exands to 
 |:----------	| -----------
@@ -109,7 +109,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pt**Block**\        | Creates a Perch Block within the Perch Blocks Framework                                                                     | 
 | pt**Blocks**\       | Creates a Perch Blocks Framework                                                                                            | 
 | pt**Checkbox**\     | Creates a checkbox type field on your template                                                                              | 
-| pt**Com**\          | Begin a Perch Comment Section (<!--*)                                                                                              | 
+| pt**Com**\          | Begin a Perch Comment Section (<\!--*)                                                                                              | 
 | pt**Comment**\      | Adds a Perch comment line \(\<\!\-\-\*  \*\-\-\>)                                                                                                   | 
 | pt**Composite**\    | Creates a composite field of other field values                                                                             | 
 | pt**Dataselect**\   | Creates a dataselect type field in your template                                                                            | 
@@ -143,14 +143,14 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | **reset**\          | Resets Typinator's variables for the Perch Expansion Set                                                                    | 
 | **suppress**\       | Adds the suppress tag for fields                                                                                            | 
 
-##Blog Expansions
+## Blog Expansions
 |Abreviation   | Exands to 
 |:----------	| -----------
 | pb**Custom**\       | Creates a Perch Blog Custom block                                                                                           | 
 | pb**Functions**\    | List of all the Perch Blog functions details.                                                                               | 
 | pb**URL**\          | Creates a perch:blog URL Tag                                                                                                | 
 
-##Content Expansions
+## Content Expansions
 |Abreviation   | Exands to 
 |:----------	| -----------
 | pc**Create**\       | Creates a perch\_content\_create block                                                                                        | 
@@ -158,13 +158,13 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pc**Functions**\    | A guide to the Perch Gallery Functions and Documentation                                                                    | 
 | pc**Get**\          | Outputs a perch\_content call                                                                                                | 
 
-##Navigation Expansions
+## Navigation Expansions
 |Abreviation   | Exands to 
 |:----------	| -----------
 | pn**Functions**\    | A guide to the Perch Navigation Functions and Documentation                                                                 | 
 | pp**Atributes**\    | A guide to the Perch Page Attributes and Documentation                                                                      | 
 
-##Layout Expansions
+## Layout Expansions
 |Abreviation   | Exands to 
 |:----------	| -----------
 | p**Layout**\        | Use to make a call to perch_layout function with optional value pairs                                                       | 
@@ -172,7 +172,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 
 ![MacDown Screenshot](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/search_perch.png)
 
-##Perch Site Interaction
+## Perch Site Interaction
 Many of the expansion dialogs have a checkbox at the bottom that enables you to open the page for that function or tag in the Perch Documentation. There is also a built in site search (`pS\`) as shown above.
 
 |Abreviation   | Exands to 
@@ -183,7 +183,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enables you to 
 
 
 
-#Complete list as of 3/28/17
+# Complete list as of 3/28/17
 
 |Abreviation   | Exands to 
 |:----------	| -----------
