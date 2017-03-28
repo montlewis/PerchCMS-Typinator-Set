@@ -13,7 +13,6 @@ In the window that pops up, enter this address:
 
 So now the Perch expansion set should be in the sets panel of the Typinator application and you should be able to start using them!
 You can set which applications your expansion sets are active in. This is done with the little application icon under the list of sets.
-Also, there is one expansion `pHelp\`, that's pretty handy and calls up Typinator's quick search window for searching through the expansions. (the help one that searches though the expansions) that is set to `{key:⌥⇧⌘"."}` use a key command of `shift-option-command-.(period)`. So you should go to Typinator's preferences and set the quick search to that set of keys.
 
 So let's take a look at the exansions! **(Note: when you type an expansion, case doesn't matter. It's just added here for clarity)**
 
@@ -33,6 +32,15 @@ It only outputs the fields you specify but still shows you all the options that 
 will output:
 
 `<perch:content id="subheadtext" type="smarttext" label="Subhead Text" required="true" size="xl" title="true" order="4" suppress="true" divider-before="Event Details" title="true" help="This title will appear in the capsule summary. " />`
+
+#If you ever get lost
+`pHelp/`
+If you ever get lost, typing 'pHelp\' will open Typinator's Quick Search window:
+
+
+![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/quicksearch.png)
+
+Typing some text (like 'template' shown above) will show the commands available... Then just click on the one you would like to open the expansion.
 
 #Why I Love it
 The expansion set is designed to be smart. For example, if you create a field on a template using one of the `pt***\` expansions, and then do a `ptIf\` expansion:
@@ -69,6 +77,8 @@ Here's an example of an expansion that creates a `perch_content_custom` block:
 
 First, there is an option to output the block as a single line, unaligned, or aligned. And only the field values that you specify are output to the editor. And the block is created based on your input. One caviat here is the Value attribute... The expansion will output quotes around the value field except when it is a `perch_get` function. So if you're doing something with variables here, or in fact, many of the other expansions, be aware that you may have to remove the quotes around values in those cases. Perhaps there's a way to improve upon this in the future.
 
+
+##Function Guides
 Another type of expansion provides more of a guide to Perch's attributes and functions. For example, here is a abreviation `psFunctions\` that presents the following:
 
 ![SHOP FUNCTIONS](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/shop_functions.png)
@@ -173,7 +183,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enables you to 
 
 
 
-#Complete list as of 12/15/16
+#Complete list as of 3/28/17
 
 |Abreviation   | Exands to 
 |:----------	| -----------
@@ -187,7 +197,9 @@ Many of the expansion dialogs have a checkbox at the bottom that enables you to 
 | /pR             | Closing Perch:Repeater                                                                                                      | 
 | /ptA            | Closing Perch:After                                                                                                         | 
 | /ptB            | Closing Perch:Before                                                                                                        | 
+| ptCom\          | Begin a Perch Comment Section                                                                                                 | 
 | /ptCom          | End a Perch Comment Section                                                                                                 | 
+| /ptComment      | Creates a Perch Comment Section                                                                                                 | 
 | /ptError        | Closing Perch:Error                                                                                                         | 
 | /ptEvery        | Closing Perch:Every                                                                                                         | 
 | /ptIf           | Closing Perch:If                                                                                                            | 
