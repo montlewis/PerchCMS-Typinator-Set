@@ -74,7 +74,7 @@ With the `Align Assignent Operators` set to `Aligned Operators` You will get thi
   ));
 ?>
 ~~~~
-If you prefer `Aligned Operators` (`=>`) output:
+If you prefer `Non-Aligned Operators` (`=>`) output:
 ~~~~
 <?php
   perch_content_custom('Birds', array(
