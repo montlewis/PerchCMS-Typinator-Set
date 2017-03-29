@@ -34,7 +34,7 @@ will output:
 `<perch:content id="subheadtext" type="smarttext" label="Subhead Text" required="true" size="xl" title="true" order="4" suppress="true" divider-before="Event Details" title="true" help="This title will appear in the capsule summary. " />`
 
 # If you ever get lost
-`pHelp/`
+`pHelp\`
 If you ever get lost, typing 'pHelp\' will open Typinator's Quick Search window:
 
 
