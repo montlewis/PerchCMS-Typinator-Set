@@ -21,7 +21,7 @@ So I tried to set up the expansions in a logical way so that learning them is as
 
 ![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_smarttext.png)
 
-First, you set the appspace. In this case, it's Content to create a `perch:content` tag. That selection in remembered through all the template dialogs until you change it, so you only need to worry about it when you change appspaces. Then you fill out the dialog box with the variables and setting you would like. When you hit ok, this is deivered to your editor:
+First, you set the `appspace`. In this case, it's `Content` to create a `perch:content` tag. The `appspace` selection in remembered through all the template dialogs until you change it, so you only need to worry about it when you change appspaces. Then you fill out the dialog box with the variables and setting you would like. When you hit ok, this is deivered to your editor:
 
 `<perch:content id="subheadtext" type="smarttext" label="Subhead Text" size="m" />`
 
@@ -35,7 +35,7 @@ will output:
 
 # If you ever get lost
 `pHelp\`
-If you ever get lost, typing 'pHelp\' will open Typinator's Quick Search window:
+If you ever get lost, typing `pHelp\` will open Typinator's Quick Search window:
 
 
 ![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/quicksearch.png)
@@ -43,7 +43,7 @@ If you ever get lost, typing 'pHelp\' will open Typinator's Quick Search window:
 Typing some text (like 'template' shown above) will show the commands available... Then just click on the one you would like to open the expansion.
 
 # Why I Love it
-The expansion set is designed to be smart. For example, if you create a field on a template using one of the `pt***\` expansions, and then do a `ptIf\` expansion:
+**The expansion set is designed to be smart.** For example, if you create a field on a template using one of the `ptFieldType\` expansions, and then do a `ptIf\` expansion:
 
 ![Perch If](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_if_smarttext.png)
 
@@ -51,7 +51,7 @@ It inserts the field ID for the field you last created in case that's what you w
 
 `<perch:if exists="subheadtext">`
 
-Some of the expansions, like the Perch:If tag above, just create the opening tag. And to close the tag later, in your template you would use `\ptif`. Perch:before `ptb\` `\ptb`, perch:after `pta\` `\pta`, pearch:repeater `ptr\` `\ptr` and some others work that way as well.
+By the way, some of the expansions, like the `Perch:If` tag above, create just the opening tag. So to close the tag later, you would put the backslash first, like this: `\ptif`. Perch:before `ptb\` `\ptb`, perch:after `pta\` `\pta`, pearch:repeater `ptr\` `\ptr` and some others work that way as well.
 
 By the way, here's a list of what's available in the `perch:if` Special IDs dropdown:
 
@@ -61,7 +61,7 @@ Here's an example of an expansion that creates a `perch_content_custom` block:
 
 ![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_content_custom.png)
 
-
+With the `Align Assignent Operators` set to `Aligned Operators` You will get this delivered to your editor:
 ~~~~
 <?php
   perch_content_custom('Birds', array(
@@ -74,12 +74,31 @@ Here's an example of an expansion that creates a `perch_content_custom` block:
   ));
 ?>
 ~~~~
+If you prefer `Aligned Operators` (`=>`) output:
+~~~~
+<?php
+  perch_content_custom('Birds', array(
+     'page'=>'/birds.php',
+     'template'=>'/birds/roosts.html',
+     'filter'=>'feathered',
+     'match'=>'eq',
+     'value'=>'true',
+     'skip-template'=>'true',
+  ));
+?>`
+~~~~
+or if you prefer `Single-line` output:
+~~~~
+<?php perch_content_custom('Birds', array('page'=>'/birds.php', 'template'=>'/birds/roosts.html', 'filter'=>'feathered', 'match' =>'eq', 'value'=>'true', 'skip-template'=>'true',));?>
 
-First, there is an option to output the block as a single line, unaligned, or aligned. And only the field values that you specify are output to the editor. And the block is created based on your input. One caviat here is the Value attribute... The expansion will output quotes around the value field except when it is a `perch_get` function. So if you're doing something with variables here, or in fact, many of the other expansions, be aware that you may have to remove the quotes around values in those cases. Perhaps there's a way to improve upon this in the future.
+
+~~~~
+
+_**So only the field values that you specify are output to the editor**_ as the code block is created based on your input. One caviat here is the Value attribute... The expansion will output quotes around the value field unles you've specified a `perch_get` function. So if you're doing something with variables here, and in fact this applies to some of the other expansions, be aware that you may have to remove the quotes around values in those cases. Perhaps there's a way to improve upon this in the future.
 
 
 ## Function Guides
-Another type of expansion provides more of a guide to Perch's attributes and functions. For example, here is a abreviation `psFunctions\` that presents the following:
+Another type of expansion provides kind of a guide to Perch's attributes and functions. For example, here is a abreviation `psFunctions\` that presents the following:
 
 ![SHOP FUNCTIONS](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/shop_functions.png)
 
