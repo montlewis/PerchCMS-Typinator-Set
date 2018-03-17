@@ -1,4 +1,4 @@
-![PERCH CMS EXPANSIONS](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/birdsofafeather.gif)
+![PERCH CMS EXPANSIONS](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/birdsofafeather2.gif)
 
 # PerchCMS-Typinator-Set
 Expansions for Perch CMS using Typinator 7+.
