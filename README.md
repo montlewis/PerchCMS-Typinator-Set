@@ -1,7 +1,9 @@
 # PerchCMS-Typinator-Set
 Expansions for Perch CMS using Typinator 7+.
 # Typinator
-Requires Typinator 7. Typinator is an incredable text expansion tool and I can't recommend it more highly. It is Mac only, so sorry everyone else. You can get it here:Version 7 Greatly enhanced the dialogs and enables for really powerful expansions. Take a look, I think you will really like how Typinator and this expansion set enhance your Perch development.
+Requires Typinator 7. Typinator is an incredable text expansion tool and I can't recommend it more highly. It is Mac only, so sorry everyone else. Version 7 Greatly enhanced the dialogs and enables for really powerful expansions. Take a look, I think you will really like how Typinator and this expansion set enhance your Perch development.
+
+You can get it here:
 <http://www.ergonis.com/downloads/>
 
 # Setting it up
@@ -17,7 +19,7 @@ You can set which applications your expansion sets are active in. This is done w
 So let's take a look at the exansions! **(Note: when you type an expansion, case doesn't matter. It's just added here for clarity)**
 
 # How it works
-So I tried to set up the expansions in a logical way so that learning them is as easy as possible. For working in templates, no matter which perch application you're in, you enter an abbreviations that begins with `pt` for Perch Template, followed by the field type you would like, followed by a trailing `\`. So the Abreviation `ptsmarttext\` will present a dialog that looks like this:
+So I tried to set up the expansions in a logical way so that learning them is as easy as possible. For working in **templates**, no matter which perch application you're in, you enter an abbreviations that begins with **`pt`**, as in Perch Template, followed by the field type or code you would like, followed by a trailing `\`. So the Abreviation `ptsmarttext\` will present a dialog that looks like this:
 
 ![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_smarttext.png)
 
@@ -40,7 +42,7 @@ If you ever get lost, typing `pHelp\` will open Typinator's Quick Search window:
 
 ![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/quicksearch.png)
 
-Typing some text (like 'template' shown above) will show the commands available... Then just click on the one you would like to open the expansion.
+Typing some text (like 'template', shown above) will show the expansions available involving templates... Then just click on the one you would like to open the expansion.
 
 # Why I Love it
 **The expansion set is designed to be smart.** For example, if you create a field on a template using one of the `ptFieldType\` expansions, and then do a `ptIf\` expansion:
@@ -94,11 +96,11 @@ or if you prefer `Single-line` output:
 
 ~~~~
 
-_**So only the field values that you specify are output to the editor**_ as the code block is created based on your input. One caviat here is the Value attribute... The expansion will output quotes around the value field unles you've specified a `perch_get` function. So if you're doing something with variables here, and in fact this applies to some of the other expansions, be aware that you may have to remove the quotes around values in those cases. Perhaps there's a way to improve upon this in the future.
+_**So only the field values that you specify are output to the editor**_ as the code block is created based on your input.
 
 
 ## Function Guides
-Another type of expansion provides kind of a guide to Perch's attributes and functions. For example, here is a abreviation `psFunctions\` that presents the following:
+Another type of expansion provides a guide to Perch's attributes and functions for a particular app space or special field types. For example, here is the expansion `psFunctions\` that presents the following:
 
 ![SHOP FUNCTIONS](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/shop_functions.png)
 
@@ -110,7 +112,7 @@ The options here are:
 
 So, selecting `perch_shop_brands()` will output:
 
-`<?php perch_shop_brands(); ?>` to your editor and if the Open Perch Docs: Shop Functions is checked, will open a Safari window to that function’s page.
+`<?php perch_shop_brands(); ?>` to your editor and if the `Open Perch Docs: Shop Functions` is checked, **it will open a Safari window to that function’s page in the Perch Documentation**.
 
 
 
@@ -174,7 +176,8 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 |:----------	| -----------
 | pc**Create**\       | Creates a perch\_content\_create block                                                                                        | 
 | pc**Custom**\       | Create a perch\_content\_custom block                                                                                         | 
-| pc**Functions**\    | A guide to the Perch Gallery Functions and Documentation                                                                    | 
+| pc**Collection**\       | Create a perch\_collection block                                                                                         | 
+| pc**Functions**\    | A guide to the Perch Content Functions and Documentation                                                                    | 
 | pc**Get**\          | Outputs a perch\_content call                                                                                                | 
 
 ## Navigation Expansions
@@ -186,17 +189,17 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 ## Layout Expansions
 |Abreviation   | Exands to 
 |:----------	| -----------
-| p**Layout**\        | Use to make a call to perch_layout function with optional value pairs                                                       | 
+| p**Layout**\        | Use to make a call to `perch_layout` function with optional value pairs                                                       | 
 | pl**Functions**\    | A guide to the Perch Layout Functions and Documentation                                                                     | 
 
 ![MacDown Screenshot](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/search_perch.png)
 
 ## Perch Site Interaction
-Many of the expansion dialogs have a checkbox at the bottom that enables you to open the page for that function or tag in the Perch Documentation. There is also a built in site search (`pS\`) as shown above.
+Many of the expansion dialogs have a checkbox at the bottom that enable you to open the page for that function or tag in the Perch Documentation. There is also a built in site search (`pS\`) as shown above.
 
 |Abreviation   | Exands to 
 |:----------	| -----------
-| /p**S**             | Searches the Perch Site, Documentation, and Forum                                                                                                       | 
+| p**S**\             | Searches the Perch Site, Documentation, and Forum                                                                                                       | 
 | p**News**\    | Opens the Grabaperch site news and current version pages                                                                     | 
 | p**Account**\    | Opens your account page at Grabaperch                                                                     | 
 
