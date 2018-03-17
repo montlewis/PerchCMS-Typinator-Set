@@ -25,7 +25,7 @@ So I tried to set up the expansions in a logical way so that learning them is as
 
 ![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_smarttext.png)
 
-First, you set the `appspace`. In this case, it's `Content` to create a `perch:content` tag. The `appspace` selection in remembered through all the template dialogs until you change it, so you only need to worry about it when you change appspaces. Then you fill out the dialog box with the variables and setting you would like. When you hit ok, this is deivered to your editor:
+First, you set the `appspace`. In this case, it's `Content` to create a `perch:content` tag. The `appspace` selection in remembered through all the template dialogs until you change it, so you only need to worry about it when you change appspaces. Then you fill out the dialog box with the variables and setting you would like. When you hit ok, this is delivered to your editor:
 
 `<perch:content id="subheadtext" type="smarttext" label="Subhead Text" size="m" />`
 
