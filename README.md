@@ -3,7 +3,7 @@
 # PerchCMS-Typinator-Set
 Expansions for Perch CMS using Typinator 7+.
 # Typinator
-Requires Typinator 7. Typinator is an incredible text expansion tool and I can't recommend it more highly. It is Mac only, so sorry everyone else. Version 7 Greatly enhanced the dialogs and enables for really powerful expansions. Take a look, I think you will really like how Typinator and this expansion set enhance your Perch development.
+Requires Typinator 7. Typinator is an incredible text expansion tool and I can't recommend it more highly. It is Mac only, so sorry everyone else. Version 7 greatly enhanced the dialogs and enables for really powerful expansions. Take a look, I think you will really like how Typinator and this expansion set enhance your Perch development.
 
 You can get it here:
 <http://www.ergonis.com/downloads/>
