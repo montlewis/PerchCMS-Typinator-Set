@@ -138,6 +138,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pt**Dataselect**\   | Creates a dataselect type field in your template                                                                            | 
 | pt**Date**\         | Creates a date type field in your template                                                                                  | 
 | pt**Else**\         | Creates a Perch else tag in your template                                                                                   | 
+| pt**Group**\        | Creates an opening Perch group tag in your template. (Perch 3.1 beta feature)                                                                                   | 
 | p**Template**\      | Creates a Perch Template Call. This can be used in templates to call in other templates.                                    | 
 | pt**EventsTags**\   | List of all Perch Event IDs                                                                                                 | 
 | pt**File**\         | Creates a file field in your template                                                                                       | 
@@ -226,6 +227,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | /ptComment      | Creates a Perch Comment Section                                                                                                 | 
 | /ptError        | Closing Perch:Error                                                                                                         | 
 | /ptEvery        | Closing Perch:Every                                                                                                         | 
+| /ptGroup        | Closing Perch:Group                                                                                                            | 
 | /ptIf           | Closing Perch:If                                                                                                            | 
 | /ptM            | Closing Perch:Member                                                                                                        | 
 | /ptNoresults    | Closing Perch:Noresults                                                                                                     | 
@@ -287,6 +289,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | pTemplate\      | Creates a Perch Template Call. This can be used in templates to call in other templates.                                    | 
 | ptEventsTags\   | List of all Perch Event IDs                                                                                                 | 
 | ptFile\         | Creates a file field in your template                                                                                       | 
+| ptGroup\        | Creates an opening Perch group tag in your template. (Perch 3.1 beta feature)                                                                                   | 
 | ptHidden\       | Use this to add Perch special field ids                                                                                     | 
 | ptIf\           | Creates the opening \<perch:if> conditional tag                                                                              | 
 | ptImage\        | Creates an image type field in your template                                                                                | 
