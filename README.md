@@ -8,6 +8,20 @@ Requires Typinator 7. Typinator is an incredible text expansion tool and I can't
 You can get it here:
 <http://www.ergonis.com/downloads/>
 
+# 6/14/18 Update
+With today's revision to the expansion set, Perch's new templating tag formatting introduced in version 3.1 is now supported. Select Perch version 3.1:
+
+![PERCH 3.1 Templating Support](https://www.lewisarts.com/perch31version.png)
+
+
+The tag will now be formatted like this with boolean values and without the XHTML-style `/>` closing:
+
+`<perch:content id="partner_name" type="text" label="Partner Name" required html size="m" title suppress title >`
+
+The expansion set still supports the older format as well. Just select an older version number from the dropdopwn menu. Just like the App Space selection, the version selection is remembered between sessions.
+
+
+
 # Setting it up
 Once you have Typinator installed, you can use its new subscribe function to connect to this set of Perch expansions.
 Under the Action menu, select Sets, and then select Subscribe to Set via URL...
@@ -128,7 +142,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 
 |Abreviation   | Exands to 
 |:----------	| -----------
-| **appspace**\       | Set the Perch App Space                                                                                                     | 
+| **appspace**\       | Set the Perch App Space and Perch version number                                                                                                    | 
 | pt**Block**\        | Creates a Perch Block within the Perch Blocks Framework                                                                     | 
 | pt**Blocks**\       | Creates a Perch Blocks Framework                                                                                            | 
 | pt**Checkbox**\     | Creates a checkbox type field on your template                                                                              | 
@@ -141,6 +155,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pt**Group**\        | Creates an opening Perch group tag in your template. (Perch 3.1 beta feature)                                                                                   | 
 | p**Template**\      | Creates a Perch Template Call. This can be used in templates to call in other templates.                                    | 
 | pt**EventsTags**\   | List of all Perch Event IDs                                                                                                 | 
+| pt**FA**\           | Creates a Creates a Font Awesome field in your template. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").       | 
 | pt**File**\         | Creates a file field in your template                                                                                       | 
 | pt**Hidden**\       | Use this to add Perch special field ids                                                                                     | 
 | pt**If**\           | Creates the opening \<perch:if> conditional tag                                                                              | 
@@ -159,9 +174,11 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pt**Select**\       | Creates a select type field in your template                                                                                | 
 | pt**Slug**\         | Creates a slug field for an id                                                                                              | 
 | pt**Smarttext**\    | Creates a smarttext field in your template                                                                                  | 
+| pt**Table**\         | Creates a table field in your template. (Requires optional [optional fieldtype](https://github.com/siansell/perch-cms-fieldtype-table "Table Fieldtype") by Simon Ansell)                                                                                       | 
 | pt**Text**\         | Creates a text field in your template                                                                                       | 
 | pt**Textarea**\     | Creates a a multi-line block of text in your template                                                                       | 
 | pt**Time**\         | Creates a time only field on your template                                                                                  | 
+| ptTimestamp\    | Creates a timestamp field in your template (requires [optional fieldtype](https://github.com/montlewis/perch-cms-fieldtype-timestamp "Timestamp fieldtype") by Monty Lewis)                                     | 
 | pt**Vimeo**\        | Creates an Vimeo type field in your template. Requires Vimeo fieldtype                                                      | 
 | pt**Youtube**\      | Creates an YouTube type field in your template. Requires YouTube fieldtype                                                  | 
 | **reset**\          | Resets Typinator's variables for the Perch Expansion Set                                                                    | 
@@ -195,6 +212,12 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | p**Layout**\        | Use to make a call to `perch_layout` function with optional value pairs                                                       | 
 | pl**Functions**\    | A guide to the Perch Layout Functions and Documentation                                                                     | 
 
+## Third-Party App Expansions
+|Abreviation   | Exands to 
+|:----------	| -----------
+| p**FA**\        | Creates a Font Awesome call in php files. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").                                                     | 
+
+
 ![MacDown Screenshot](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/search_perch.png)
 
 ## Perch Site Interaction
@@ -208,7 +231,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 
 
 
-# Complete list as of 3/28/17
+# Complete list as of 6/14/18
 
 |Abreviation   | Exands to 
 |:----------	| -----------
@@ -257,6 +280,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | peSlug\         | Creates a tag for the Events app eventSlug                                                                                  | 
 | peTitle\        | Creates a tag for the Events app eventTitle                                                                                 | 
 | pEvery\         | Creates a perch:every tag                                                                                                   | 
+| pFA\        | Creates a Font Awesome call in php files. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").                                                     | 
 | pfGet\          | Creates a call to perch_form function                                                                                       | 
 | pget\           | Creates a perch_get tag                                                                                                     | 
 | pgFunctions\    | A guide to the Perch Gallery Functions and Documentation                                                                    | 
@@ -286,6 +310,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | ptDataselect\   | Creates a dataselect type field in your template                                                                            | 
 | ptDate\         | Creates a date type field in your template                                                                                  | 
 | ptElse\         | Creates a Perch else tag in your template                                                                                   | 
+| ptFA\           | Creates a Creates a Font Awesome field in your template. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").       | 
 | pTemplate\      | Creates a Perch Template Call. This can be used in templates to call in other templates.                                    | 
 | ptEventsTags\   | List of all Perch Event IDs                                                                                                 | 
 | ptFile\         | Creates a file field in your template                                                                                       | 
@@ -307,11 +332,12 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | ptSelect\       | Creates a select type field in your template                                                                                | 
 | ptSlug\         | Creates a slug field for an id                                                                                              | 
 | ptSmarttext\    | Creates a smarttext field in your template                                                                                  | 
+| ptTable\         | Creates a table field in your template. (Requires optional [optional fieldtype](https://github.com/siansell/perch-cms-fieldtype-table "Table Fieldtype") by Simon Ansell)                                                                                       | 
 | ptText\         | Creates a text field in your template                                                                                       | 
 | ptTextarea\     | Creates a a multi-line block of text in your template                                                                       | 
 | ptTime\         | Creates a time only field on your template                                                                                  | 
+| ptTimestamp\    | Creates a timestamp field in your template (requires [optional fieldtype](https://github.com/montlewis/perch-cms-fieldtype-timestamp "Timestamp fieldtype") by Monty Lewis)                                     | 
 | ptVimeo\        | Creates an Vimeo type field in your template. Requires Vimeo fieldtype                                                      | 
 | ptYoutube\      | Creates an YouTube type field in your template. Requires YouTube fieldtype                                                  | 
 | reset\          | Resets Typinator's variables for the Perch Expansion Set                                                                    | 
 | suppress\       | Adds the suppress tag for fields                                                                                            | 
-
