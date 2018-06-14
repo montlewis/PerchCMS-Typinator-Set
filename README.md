@@ -16,7 +16,7 @@ With today's revision to the expansion set, Perch's new templating tag formattin
 
 The tag will now be formatted like this with boolean values and without the XHTML-style `/>` closing:
 
-`<perch:content id="partner_name" type="text" label="Partner Name" required html size="m" title suppress title >`
+`<perch:content id="partner_name" type="text" label="Partner Name" required html size="m" suppress title >`
 
 The expansion set still supports the older format as well. Just select an older version number from the dropdopwn menu. Just like the App Space selection, the version selection is remembered between sessions.
 
