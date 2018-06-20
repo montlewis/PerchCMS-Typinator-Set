@@ -37,7 +37,7 @@ So let's take a look at the exansions! **(Note: when you type an expansion, case
 # How it works
 So I tried to set up the expansions in a logical way so that learning them is as easy as possible. For working in **templates**, no matter which perch application you're in, you enter an abbreviations that begins with **`pt`**, as in Perch Template, followed by the field type or code you would like, followed by a trailing `\`. So the Abreviation `ptsmarttext\` will present a dialog that looks like this:
 
-![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_smarttext.png)
+![SMARTTEXT](https://www.lewisarts.com/perchset/perch_smarttext.png)
 
 First, you set the `appspace`. In this case, it's `Content` to create a `perch:content` tag. The `appspace` selection in remembered through all the template dialogs until you change it, so you only need to worry about it when you change appspaces. Then you fill out the dialog box with the variables and setting you would like. When you hit ok, this is delivered to your editor:
 
@@ -45,7 +45,7 @@ First, you set the `appspace`. In this case, it's `Content` to create a `perch:c
 
 It only outputs the fields you specify but still shows you all the options that are available to you. So this expansion:
 
-![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_smarttext2.png)
+![SMARTTEXT](https://www.lewisarts.com/perchset/perch_smarttext2.png)
 
 will output:
 
@@ -56,14 +56,14 @@ will output:
 If you ever get lost, typing `pHelp\` will open Typinator's Quick Search window:
 
 
-![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/quicksearch.png)
+![SMARTTEXT](https://www.lewisarts.com/perchset/quicksearch.png)
 
 Typing some text (like 'template', shown above) will show the expansions available involving templates... Then just click on the one you would like to open the expansion.
 
 # Why I Love it
 **The expansion set is designed to be smart.** For example, if you create a field on a template using one of the `ptFieldType\` expansions, and then do a `ptIf\` expansion:
 
-![Perch If](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_if_smarttext.png)
+![Perch If](https://www.lewisarts.com/perchset/perch_if_smarttext.png)
 
 It inserts the field ID for the field you last created in case that's what you wanted. so hiting enter delivers:
 
@@ -73,11 +73,11 @@ By the way, some of the expansions, like the `Perch:If` tag above, create just t
 
 By the way, here's a list of what's available in the `perch:if` Special IDs dropdown:
 
-![Perch If Special IDs](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/if_options.png)
+![Perch If Special IDs](https://www.lewisarts.com/perchset/if_options.png)
 
 Here's an example of an expansion that creates a `perch_content_custom` block:
 
-![SMARTTEXT](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/perch_content_custom.png)
+![SMARTTEXT](https://www.lewisarts.com/perchset/perch_content_custom.png)
 
 With the `Align Assignent Operators` set to `Aligned Operators` You will get this delivered to your editor:
 ~~~~
@@ -118,13 +118,13 @@ _**So only the field values that you specify are output to the editor**_ as the 
 ## Function Guides
 Another type of expansion provides a guide to Perch's attributes and functions for a particular app space or special field types. For example, here is the expansion `psFunctions\` that presents the following:
 
-![SHOP FUNCTIONS](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/shop_functions.png)
+![SHOP FUNCTIONS](https://www.lewisarts.com/perchset/shop_functions.png)
 
 In the case of these expansions, it will drop an example function into your editor and optionally take you to that functions page in the Perch Documentation.
 
 The options here are:
 
-![SSOP FUNCTIONS LIST](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/shop_function_list.png)
+![SSOP FUNCTIONS LIST](https://www.lewisarts.com/perchset/shop_function_list.png)
 
 So, selecting `perch_shop_brands()` will output:
 
@@ -218,7 +218,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | p**FA**\        | Creates a Font Awesome call in php files. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").                                                     | 
 
 
-![MacDown Screenshot](https://github.com/montlewis/PerchCMS-Typinator-Set/raw/master/search_perch.png)
+![MacDown Screenshot](https://www.lewisarts.com/perchset/search_perch.png)
 
 ## Perch Site Interaction
 Many of the expansion dialogs have a checkbox at the bottom that enable you to open the page for that function or tag in the Perch Documentation. There is also a built in site search (`pS\`) as shown above.
