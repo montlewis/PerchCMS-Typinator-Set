@@ -35,7 +35,7 @@ You can set which applications your expansion sets are active in. This is done w
 So let's take a look at the exansions! **(Note: when you type an expansion, case doesn't matter. It's just added here for clarity)**
 
 # How it works
-So I tried to set up the expansions in a logical way so that learning them is as easy as possible. For working in **templates**, no matter which perch application you're in, you enter an abbreviations that begins with **`pt`**, as in Perch Template, followed by the field type or code you would like, followed by a trailing `\`. So the Abreviation `ptsmarttext\` will present a dialog that looks like this:
+So I tried to set up the expansions in a logical way so that learning them is as easy as possible. For working in **templates**, no matter which perch application you're in, you enter an abbreviations that begins with **`pt`**, as in Perch Template, followed by the field type or code you would like, followed by a trailing `\`. So the Abbreviation `ptsmarttext\` will present a dialog that looks like this:
 
 ![SMARTTEXT](https://www.lewisarts.com/perchset/perch_smarttext.png)
 
@@ -140,7 +140,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 # Here's the list of expansions by group:
 ## Perch Termplating
 
-|Abreviation   | Exands to 
+|Abbreviation   | Exands to 
 |:----------	| -----------
 | **appspace**\       | Set the Perch App Space and Perch version number                                                                                                    | 
 | pt**Block**\        | Creates a Perch Block within the Perch Blocks Framework                                                                     | 
@@ -185,14 +185,14 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | **suppress**\       | Adds the suppress tag for fields                                                                                            | 
 
 ## Blog Expansions
-|Abreviation   | Exands to 
+|Abbreviation   | Exands to 
 |:----------	| -----------
 | pb**Custom**\       | Creates a Perch Blog Custom block                                                                                           | 
 | pb**Functions**\    | List of all the Perch Blog functions details.                                                                               | 
 | pb**URL**\          | Creates a perch:blog URL Tag                                                                                                | 
 
 ## Content Expansions
-|Abreviation   | Exands to 
+|Abbreviation   | Exands to 
 |:----------	| -----------
 | pc**Create**\       | Creates a perch\_content\_create block                                                                                        | 
 | pc**Custom**\       | Create a perch\_content\_custom block                                                                                         | 
@@ -201,19 +201,19 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pc**Get**\          | Outputs a perch\_content call                                                                                                | 
 
 ## Navigation Expansions
-|Abreviation   | Exands to 
+|Abbreviation   | Exands to 
 |:----------	| -----------
 | pn**Functions**\    | A guide to the Perch Navigation Functions and Documentation                                                                 | 
 | pp**Atributes**\    | A guide to the Perch Page Attributes and Documentation                                                                      | 
 
 ## Layout Expansions
-|Abreviation   | Exands to 
+|Abbreviation   | Exands to 
 |:----------	| -----------
 | p**Layout**\        | Use to make a call to `perch_layout` function with optional value pairs                                                       | 
 | pl**Functions**\    | A guide to the Perch Layout Functions and Documentation                                                                     | 
 
 ## Third-Party App Expansions
-|Abreviation   | Exands to 
+|Abbreviation   | Exands to 
 |:----------	| -----------
 | p**FA**\        | Creates a Font Awesome call in php files. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").                                                     | 
 
@@ -223,7 +223,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 ## Perch Site Interaction
 Many of the expansion dialogs have a checkbox at the bottom that enable you to open the page for that function or tag in the Perch Documentation. There is also a built in site search (`pS\`) as shown above.
 
-|Abreviation   | Exands to 
+|Abbreviation   | Exands to 
 |:----------	| -----------
 | p**S**\             | Searches the Perch Site, Documentation, and Forum                                                                                                       | 
 | p**News**\    | Opens the Grabaperch site news and current version pages                                                                     | 
@@ -233,7 +233,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 
 # Complete list as of 6/14/18
 
-|Abreviation   | Exands to 
+|Abbreviation   | Exands to 
 |:----------	| -----------
 | /pA             | Closing Perch:After                                                                                                         | 
 | /pB             | Closing Perch:Before                                                                                                        | 
@@ -284,7 +284,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | pfGet\          | Creates a call to perch_form function                                                                                       | 
 | pget\           | Creates a perch_get tag                                                                                                     | 
 | pgFunctions\    | A guide to the Perch Gallery Functions and Documentation                                                                    | 
-| phelp\          | Use this to search the abreviations and expansions. Make sure Typinator quick search is set to:⌥⇧⌘"."                   | 
+| phelp\          | Use this to search the abbreviations and expansions. Make sure Typinator quick search is set to:⌥⇧⌘"."                   | 
 | pIf\            | Creates the opening \<perch:if> conditional tag                                                                              | 
 | pInit\          | Creates the Initial Perch Runtime call                                                                                      | 
 | pJavascript\    | Creates the perch_get_javascript call                                                                                       | 
