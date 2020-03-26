@@ -215,7 +215,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | ps**Product**\      | Use to make a call to `perch_shop_product` function with optional value pairs                                                       | 
 | ps**Products**\     | Use to make a call to `perch_shop_products` function with optional value pairs                                                                | 
 | ps**Brand**\     | Use to make a call to `perch_shop_brand` function with optional value pairs                                                                | 
-| ps**Brands**\     | Use to make a call to `perch_shop_brand` function with optional value pairs                                                                | 
+| ps**Brands**\     | Use to make a call to `perch_shop_brands` function with optional value pairs                                                                | 
 | ps**Functions**\     | A guide to all the Perch Shop Functions and Documentation                                                                 | 
 
 ## Layout Expansions
