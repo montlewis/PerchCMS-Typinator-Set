@@ -42,7 +42,7 @@ So I tried to set up the expansions in a logical way so that learning them is as
 
 ![SMARTTEXT](https://www.lewisarts.com/perchset/perch_smarttext.png)
 
-First, you set the `appspace`. In this case, it's `Content` to create a `perch:content` tag. The `appspace` selection in remembered through all the template dialogs until you change it, so you only need to worry about it when you change appspaces. Then you fill out the dialog box with the variables and setting you would like. When you hit ok, this is delivered to your editor:
+First, you set the `appspace`. In this case, it's `Content` to create a `perch:content` tag. The `appspace` selection is remembered through all the template dialogs until you change it, so you only need to worry about it when you change appspaces. Then you fill out the dialog box with the variables and setting you would like. When you hit ok, this is delivered to your editor:
 
 `<perch:content id="subheadtext" type="smarttext" label="Subhead Text" size="m" />`
 
@@ -74,7 +74,7 @@ It inserts the field ID for the field you last created in case that's what you w
 
 By the way, some of the expansions, like the `Perch:If` tag above, create just the opening tag. So to close the tag later, you would put the backslash first, like this: `\ptif`. Perch:before `ptb\` `\ptb`, perch:after `pta\` `\pta`, pearch:repeater `ptr\` `\ptr` and some others work that way as well.
 
-By the way, here's a list of what's available in the `perch:if` Special IDs dropdown:
+The `\ptif` expansion is really powerful, here's a list of what's available in the `perch:if` Special IDs dropdown:
 
 ![Perch If Special IDs](https://www.lewisarts.com/perchset/if_options.png)
 
@@ -82,7 +82,7 @@ Here's an example of an expansion that creates a `perch_content_custom` block:
 
 ![SMARTTEXT](https://www.lewisarts.com/perchset/perch_content_custom.png)
 
-With the `Align Assignent Operators` set to `Aligned Operators` You will get this delivered to your editor:
+With the `Align Assignment Operators` set to `Aligned Operators` You will get this delivered to your editor:
 ~~~~
 <?php
   perch_content_custom('Birds', array(
