@@ -8,6 +8,9 @@ Requires Typinator 7. Typinator is an incredible text expansion tool and I can't
 You can get it here:
 <http://www.ergonis.com/downloads/>
 
+# 3/26/20 Update
+Added several new expansions: `perch_shop_products`, `perch_shop_product`, `perch_shop_brands`, and `perch_shop_brand`. Fixed a bug with `return-html` value on data return expansions. Added `editor-config` to `textarea` expansion. Added `no-index` option to all template-level field expansions. Added `mailchimp`, `email`, `sharing`, and `categories` to all template-level expansions. Added `pagination` and `navigation` values to `perch:if` expansions. The `ps\` expansion now seaches the perch documentation sites as well as the old and new forums. Assorted other enhancements.
+
 # 6/14/18 Update
 With today's revision to the expansion set, Perch's new templating tag formatting introduced in version 3.1 is now supported. Select Perch version 3.1:
 
@@ -206,11 +209,22 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pn**Functions**\    | A guide to the Perch Navigation Functions and Documentation                                                                 | 
 | pp**Atributes**\    | A guide to the Perch Page Attributes and Documentation                                                                      | 
 
+## Shop Expansions
+|Abreviation   | Exands to 
+|:----------	| -----------
+| ps**Product**\      | Use to make a call to `perch_shop_product` function with optional value pairs                                                       | 
+| ps**Products**\     | Use to make a call to `perch_shop_products` function with optional value pairs                                                                | 
+| ps**Brand**\     | Use to make a call to `perch_shop_brand` function with optional value pairs                                                                | 
+| ps**Brands**\     | Use to make a call to `perch_shop_brand` function with optional value pairs                                                                | 
+| ps**Functions**\     | A guide to all the Perch Shop Functions and Documentation                                                                 | 
+
 ## Layout Expansions
 |Abreviation   | Exands to 
 |:----------	| -----------
 | p**Layout**\        | Use to make a call to `perch_layout` function with optional value pairs                                                       | 
 | pl**Functions**\    | A guide to the Perch Layout Functions and Documentation                                                                     | 
+
+
 
 ## Third-Party App Expansions
 |Abreviation   | Exands to 
