@@ -123,7 +123,7 @@ Another type of expansion provides a guide to Perch's attributes and functions f
 
 ![SHOP FUNCTIONS](https://www.lewisarts.com/perchset/shop_functions.png)
 
-In the case of these expansions, it will drop an example function into your editor and optionally take you to that functions page in the Perch Documentation.
+In the case of these expansions, it will drop an example function into your editor and optionally take you to that function’s page in the Perch Documentation.
 
 The options here are:
 
@@ -143,13 +143,13 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 # Here's the list of expansions by group:
 ## Perch Termplating
 
-|Abreviation   | Exands to 
+|Abbreviation   | Expands to 
 |:----------	| -----------
 | **appspace**\       | Set the Perch App Space and Perch version number                                                                                                    | 
 | pt**Block**\        | Creates a Perch Block within the Perch Blocks Framework                                                                     | 
 | pt**Blocks**\       | Creates a Perch Blocks Framework                                                                                            | 
 | pt**Calendar**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kanali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").
-|
+
 | pt**Checkbox**\     | Creates a checkbox type field on your template                                                                              | 
 | pt**Com**\          | Begin a Perch Comment Section (<\!--*)                                                                                              | 
 | pt**Comment**\      | Adds a Perch comment line \(\<\!\-\-\*  \*\-\-\>)                                                                                                   | 
@@ -192,14 +192,14 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | **suppress**\       | Adds the suppress tag for fields                                                                                            | 
 
 ## Blog Expansions
-|Abreviation   | Exands to 
+|Abbreviation   | Expands to 
 |:----------	| -----------
 | pb**Custom**\       | Creates a Perch Blog Custom block                                                                                           | 
 | pb**Functions**\    | List of all the Perch Blog functions details.                                                                               | 
 | pb**URL**\          | Creates a perch:blog URL Tag                                                                                                | 
 
 ## Content Expansions
-|Abreviation   | Exands to 
+|Abbreviation   | Expands to 
 |:----------	| -----------
 | pc**Create**\       | Creates a perch\_content\_create block                                                                                        | 
 | pc**Custom**\       | Create a perch\_content\_custom block                                                                                         | 
@@ -208,13 +208,13 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pc**Get**\          | Outputs a perch\_content call                                                                                                | 
 
 ## Navigation Expansions
-|Abreviation   | Exands to 
+|Abreviation   | Expands to 
 |:----------	| -----------
 | pn**Functions**\    | A guide to the Perch Navigation Functions and Documentation                                                                 | 
 | pp**Atributes**\    | A guide to the Perch Page Attributes and Documentation                                                                      | 
 
 ## Shop Expansions
-|Abreviation   | Exands to 
+|Abreviation   | Expands to 
 |:----------	| -----------
 | ps**Product**\      | Use to make a call to `perch_shop_product` function with optional value pairs                                                       | 
 | ps**Products**\     | Use to make a call to `perch_shop_products` function with optional value pairs                                                                | 
@@ -223,7 +223,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | ps**Functions**\     | A guide to all the Perch Shop Functions and Documentation                                                                 | 
 
 ## Layout Expansions
-|Abreviation   | Exands to 
+|Abbreviation   | Expands to 
 |:----------	| -----------
 | p**Layout**\        | Use to make a call to `perch_layout` function with optional value pairs                                                       | 
 | pl**Functions**\    | A guide to the Perch Layout Functions and Documentation                                                                     | 
@@ -231,7 +231,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 
 
 ## Third-Party App Expansions
-|Abreviation   | Exands to 
+|Abbreviation   | Expands to 
 |:----------	| -----------
 | pt**Calendar**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kanali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").
 |
@@ -244,7 +244,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 ## Perch Site Interaction
 Many of the expansion dialogs have a checkbox at the bottom that enable you to open the page for that function or tag in the Perch Documentation. There is also a built in site search (`pS\`) as shown above.
 
-|Abreviation   | Exands to 
+|Abbreviation   | Expands to 
 |:----------	| -----------
 | p**S**\             | Searches the Perch Site, Documentation, and Forum                                                                                                       | 
 | p**News**\    | Opens the Grabaperch site news and current version pages                                                                     | 
@@ -254,7 +254,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 
 # Complete list as of 6/14/18
 
-|Abreviation   | Exands to 
+|Abbreviation   | Expands to 
 |:----------	| -----------
 | /pA             | Closing Perch:After                                                                                                         | 
 | /pB             | Closing Perch:Before                                                                                                        | 
@@ -317,6 +317,10 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | pPrefsdebug\    | Adds the PERCH_DEBUG line to the config file                                                                                | 
 | pR\             | Creates an opening Perch repeater tag                                                                                       | 
 | pSetVar\        | Adds a Perch:System set variable item                                                                                       | 
+| psProduct\      | Use to make a call to `perch_shop_product` function with optional value pairs                                                       | 
+| psProducts\     | Use to make a call to `perch_shop_products` function with optional value pairs                                                                | 
+| psBrand\     | Use to make a call to `perch_shop_brand` function with optional value pairs                                                                | 
+| psBrands\     | Use to make a call to `perch_shop_brands` function with optional value pairs                                                                | 
 | psFunctions\    | A guide to the Perch Shop Functions and Documentation                                                                       | 
 | pShowall\       | Adds the Perch Show All tag to temaplate for debugging                                                                      | 
 | ptA\            | Opening Perch:After Tag                                                                                                     | 
