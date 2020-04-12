@@ -148,7 +148,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | **appspace**\       | Set the Perch App Space and Perch version number                                                                                                    | 
 | pt**Block**\        | Creates a Perch Block within the Perch Blocks Framework                                                                     | 
 | pt**Blocks**\       | Creates a Perch Blocks Framework                                                                                            | 
-| pt**Calendar**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kanali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").
+| pt**Calendar**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kinali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").
 | pt**Checkbox**\     | Creates a checkbox type field on your template                                                                              | 
 | pt**Com**\          | Begin a Perch Comment Section (<\!--*)                                                                                              | 
 | pt**Comment**\      | Adds a Perch comment line \(\<\!\-\-\*  \*\-\-\>)                                                                                                   | 
@@ -231,7 +231,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 ## Third-Party App Expansions
 |Abbreviation   | Expands to 
 |:----------	| -----------
-| pt**Calendar**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kanali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").
+| pt**Calendar**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kinali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").
 | p**FA**\        | Creates a Font Awesome call in php files. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").                                                     | 
 | pt**PageSelect**\   | Creates a pageselect field in your template. Requires optional [Cognetif Page Select](https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect "Page Select fieldtype") fieldtype.
 |
@@ -325,7 +325,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | ptBlock\        | Creates a Perch Block within the Perch Blocks Framework                                                                     | 
 | ptBlocks\       | Creates a Perch Blocks Framework                                                                                            | 
 | ptBlogTags\     | List of all Perch Blog IDs                                                                                                  | 
-| ptCalendar\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kanali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").|
+| ptCalendar\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kinali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").|
 | ptCheckbox\     | Creates a checkbox type field on your template                                                                              | 
 | ptCom\          | Begin a Perch Comment Section                                                                                               | 
 | ptComment\      | Adds a Perch comment line                                                                                                   | 
