@@ -141,7 +141,7 @@ This is a work in progress. It's not a complete set of expansion, but it's prett
 If you find this useful, let me know. If there's a way to make it better, I’d love to hear that as well. Not sure what the best way to collaborate on something like this is, but we'll figure it out. Happy Perching!
 
 # Here's the list of expansions by group:
-## Perch Termplating
+## Perch Templating
 
 |Abbreviation   | Expands to 
 |:----------	| -----------
@@ -149,7 +149,6 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pt**Block**\        | Creates a Perch Block within the Perch Blocks Framework                                                                     | 
 | pt**Blocks**\       | Creates a Perch Blocks Framework                                                                                            | 
 | pt**Calendar**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kanali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").
-
 | pt**Checkbox**\     | Creates a checkbox type field on your template                                                                              | 
 | pt**Com**\          | Begin a Perch Comment Section (<\!--*)                                                                                              | 
 | pt**Comment**\      | Adds a Perch comment line \(\<\!\-\-\*  \*\-\-\>)                                                                                                   | 
@@ -175,7 +174,6 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pt**Options**\      | Use this to add admin field tags to your template items                                                                     | 
 | pt**Pagelist**\     | Creates a pagelist field in your template. Requires optional pagelist fieldtype                                             | 
 | pt**PageSelect**\   | Creates a pageselect field in your template. Requires optional [Cognetif Page Select](https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect "Page Select fieldtype") fieldtype.
-|
 | pt**Period**\       | Creates a period type field in your template                                                                                | 
 | pt**Radio**\        | Creates a radio type field in your template                                                                                 | 
 | pt**Select**\       | Creates a select type field in your template                                                                                | 
@@ -234,7 +232,6 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 |Abbreviation   | Expands to 
 |:----------	| -----------
 | pt**Calendar**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kanali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").
-|
 | p**FA**\        | Creates a Font Awesome call in php files. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").                                                     | 
 | pt**PageSelect**\   | Creates a pageselect field in your template. Requires optional [Cognetif Page Select](https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect "Page Select fieldtype") fieldtype.
 |
@@ -328,8 +325,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | ptBlock\        | Creates a Perch Block within the Perch Blocks Framework                                                                     | 
 | ptBlocks\       | Creates a Perch Blocks Framework                                                                                            | 
 | ptBlogTags\     | List of all Perch Blog IDs                                                                                                  | 
-| ptCalendar\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kanali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").
-|
+| ptCalendar\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kanali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").|
 | ptCheckbox\     | Creates a checkbox type field on your template                                                                              | 
 | ptCom\          | Begin a Perch Comment Section                                                                                               | 
 | ptComment\      | Adds a Perch comment line                                                                                                   | 
@@ -337,8 +333,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | ptDataselect\   | Creates a dataselect type field in your template                                                                            | 
 | ptDate\         | Creates a date type field in your template                                                                                  | 
 | ptElse\         | Creates a Perch else tag in your template                                                                                   | 
-| ptFA\           | Creates a Creates a Font Awesome field in your template. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").
-| 
+| ptFA\           | Creates a Creates a Font Awesome field in your template. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").|
 | pTemplate\      | Creates a Perch Template Call. This can be used in templates to call in other templates.                                    | 
 | ptEventsTags\   | List of all Perch Event IDs                                                                                                 | 
 | ptFile\         | Creates a file field in your template                                                                                       | 
@@ -355,14 +350,13 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | ptNumber\       | Creates a number type field in your template                                                                                | 
 | ptOptions\      | Use this to add admin field tags to your template items                                                                     | 
 | ptPagelist\     | Creates a pagelist field in your template. Requires optional pagelist fieldtype                                             | 
-| ptPageSelect\   | Creates a pageselect field in your template. Requires optional [Cognetif Page Select](https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect "Page Select fieldtype") fieldtype.
-|
+| ptPageSelect\   | Creates a pageselect field in your template. Requires optional [Cognetif Page Select](https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect "Page Select fieldtype") fieldtype.|
 | ptPeriod\       | Creates a period type field in your template                                                                                | 
 | ptRadio\        | Creates a radio type field in your template                                                                                 | 
 | ptSelect\       | Creates a select type field in your template                                                                                | 
 | ptSlug\         | Creates a slug field for an id                                                                                              | 
 | ptSmarttext\    | Creates a smarttext field in your template                                                                                  | 
-| ptTable\         | Creates a table field in your template. (Requires optional [optional fieldtype](https://github.com/siansell/perch-cms-fieldtype-table "Table Fieldtype") by Simon Ansell)                                                                                       | 
+| ptTable\        | Creates a table field in your template. (Requires optional [optional fieldtype](https://github.com/siansell/perch-cms-fieldtype-table "Table Fieldtype") by Simon Ansell)                                                                                       | 
 | ptText\         | Creates a text field in your template                                                                                       | 
 | ptTextarea\     | Creates a a multi-line block of text in your template                                                                       | 
 | ptTime\         | Creates a time only field on your template                                                                                  | 
