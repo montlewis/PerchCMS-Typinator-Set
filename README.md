@@ -8,6 +8,9 @@ Requires Typinator 7. Typinator is an incredible text expansion tool and I can't
 You can get it here:
 <http://www.ergonis.com/downloads/>
 
+# 4/13/20 Update
+Adds support for Pipit Phone Template Filter(https://grabapipit.com/pipits/template-filters/phone), Tim Kinali's Swatches (https://bitbucket.org/tamburlane/perch-fieldtype-swatches/src/master/) and Calendar (https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/) fieldtypes, and Cognetif's PageSelect (https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect) fieldtype.
+
 # 3/26/20 Update
 Added several new expansions: `perch_shop_products`, `perch_shop_product`, `perch_shop_brands`, and `perch_shop_brand`. Fixed a bug with `return-html` value on data return expansions. Added `editor-config` to `textarea` expansion. Added `no-index` option to all template-level field expansions. Added `mailchimp`, `email`, `sharing`, and `categories` to all template-level expansions. Added `pagination` and `navigation` values to `perch:if` expansions. The `ps\` expansion now seaches the perch documentation sites as well as the old and new forums. Assorted other enhancements.
 
@@ -180,6 +183,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pt**Select**\       | Creates a select type field in your template                                                                                | 
 | pt**Slug**\         | Creates a slug field for an id                                                                                              | 
 | pt**Smarttext**\    | Creates a smarttext field in your template                                                                                  | 
+| pt**Swatches**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kinali’s Swatches fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-swatches/src/master/ "Swatches fieldtype").
 | pt**Table**\         | Creates a table field in your template. (Requires optional [optional fieldtype](https://github.com/siansell/perch-cms-fieldtype-table "Table Fieldtype") by Simon Ansell)                                                                                       | 
 | pt**Text**\         | Creates a text field in your template                                                                                       | 
 | pt**Textarea**\     | Creates a a multi-line block of text in your template                                                                       | 
@@ -236,6 +240,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | p**FA**\        | Creates a Font Awesome call in php files. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").                                                     | 
 | pt**PageSelect**\   | Creates a pageselect field in your template. Requires optional [Cognetif Page Select](https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect "Page Select fieldtype") fieldtype.
 |
+| pt**Swatches**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kinali’s Swatches fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-swatches/src/master/ "Swatches fieldtype").
 
 ![MacDown Screenshot](https://www.lewisarts.com/perchset/search_perch.png)
 
@@ -358,6 +363,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | ptSelect\       | Creates a select type field in your template                                                                                | 
 | ptSlug\         | Creates a slug field for an id                                                                                              | 
 | ptSmarttext\    | Creates a smarttext field in your template                                                                                  | 
+| ptSwatches\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kinali’s Swatches fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-swatches/src/master/ "Swatches fieldtype").
 | ptTable\        | Creates a table field in your template. (Requires optional [optional fieldtype](https://github.com/siansell/perch-cms-fieldtype-table "Table Fieldtype") by Simon Ansell)                                                                                       | 
 | ptText\         | Creates a text field in your template                                                                                       | 
 | ptTextarea\     | Creates a a multi-line block of text in your template                                                                       | 
