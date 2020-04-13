@@ -239,7 +239,6 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pt**Calendar**\     | Creates a calendar fieldtype that supports multiple dates. Requires [Tim Kinali’s Calendar fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/ "Calendar fieldtype").
 | p**FA**\        | Creates a Font Awesome call in php files. Requires [Pipit Font Awesome App](https://grabapipit.com/pipits/apps/font-awesome "Pipits Font Awesome App").                                                     | 
 | pt**PageSelect**\   | Creates a pageselect field in your template. Requires optional [Cognetif Page Select](https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect "Page Select fieldtype") fieldtype.
-|
 | pt**Swatches**\     | Creates a swatches fieldtype that supports multiple dates. Requires [Tim Kinali’s Swatches fieldtype](https://bitbucket.org/tamburlane/perch-fieldtype-swatches/src/master/ "Swatches fieldtype").
 
 ![MacDown Screenshot](https://www.lewisarts.com/perchset/search_perch.png)
