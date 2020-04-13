@@ -175,6 +175,7 @@ If you find this useful, let me know. If there's a way to make it better, I’d 
 | pt**Pagelist**\     | Creates a pagelist field in your template. Requires optional pagelist fieldtype                                             | 
 | pt**PageSelect**\   | Creates a pageselect field in your template. Requires optional [Cognetif Page Select](https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect "Page Select fieldtype") fieldtype.
 | pt**Period**\       | Creates a period type field in your template                                                                                | 
+| pt**Phone**\        | Creates a formatted phone number field in your template. Requires optional Pipit phone template filter [Pipit Phone Template Filter](https://grabapipit.com/pipits/template-filters/phone "Pipit Phone Template Filter").                                                                                | 
 | pt**Radio**\        | Creates a radio type field in your template                                                                                 | 
 | pt**Select**\       | Creates a select type field in your template                                                                                | 
 | pt**Slug**\         | Creates a slug field for an id                                                                                              | 
@@ -352,6 +353,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 | ptPagelist\     | Creates a pagelist field in your template. Requires optional pagelist fieldtype                                             | 
 | ptPageSelect\   | Creates a pageselect field in your template. Requires optional [Cognetif Page Select](https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect "Page Select fieldtype") fieldtype.|
 | ptPeriod\       | Creates a period type field in your template                                                                                | 
+| ptPhone\        | Creates a formatted phone number field in your template. Requires optional Pipit phone template filter [Pipit Phone Template Filter](https://grabapipit.com/pipits/template-filters/phone "Pipit Phone Template Filter").                                                                                | 
 | ptRadio\        | Creates a radio type field in your template                                                                                 | 
 | ptSelect\       | Creates a select type field in your template                                                                                | 
 | ptSlug\         | Creates a slug field for an id                                                                                              | 
