@@ -255,7 +255,7 @@ Many of the expansion dialogs have a checkbox at the bottom that enable you to o
 
 
 
-# Complete list as of 6/14/18
+# Complete list as of 4/13/2020
 
 |Abbreviation   | Expands to 
 |:----------	| -----------
