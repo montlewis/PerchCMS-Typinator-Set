@@ -8,7 +8,7 @@ Requires Typinator 7. Typinator is an incredible text expansion tool and I can't
 You can get it here:
 <http://www.ergonis.com/downloads/>
 # 8/6/20 Update
-Correctls the closing brackets for `perch_layout` when there are no arguments.
+Corrects the closing brackets for `perch_layout` when there are no arguments.
 # 4/13/20 Update
 Adds support for Pipit Phone Template Filter(https://grabapipit.com/pipits/template-filters/phone), Tim Kinali's Swatches (https://bitbucket.org/tamburlane/perch-fieldtype-swatches/src/master/) and Calendar (https://bitbucket.org/tamburlane/perch-fieldtype-calendar/src/master/) fieldtypes, and Cognetif's PageSelect (https://gitlab.com/cognetif-os/perch-dev/cognetif_pageselect) fieldtype.
 
