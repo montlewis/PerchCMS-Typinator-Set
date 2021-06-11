@@ -11,7 +11,8 @@ You can get it here:
 Now supports the creation of filtering arrays for filtering for multiplefields in `perch_content_custom`, `perch_collection`, and `perch_shop_product`expansions. Adds support for `AND/OR` matching and `'filter-mode' => 'ungrouped'` on multiple field filtering.
 ![PERCH Filtering Arrays](https://www.lewisarts.com/perchCollection_06_11_21.png)
 creates this block of code:
-`<?php 
+~~~~
+<?php 
   perch_collection('Webinars', [
 	 'template'      => 'webinarListing',
 	 'sort'          => 'eventDate',
@@ -31,7 +32,8 @@ creates this block of code:
 	 ],
 	 'filter-mode'   => 'ungrouped',
   ]);
-?>`
+?>
+~~~~
 # 8/6/20 Update
 Corrects the closing brackets for `perch_layout` when there are no arguments.
 # 4/13/20 Update
