@@ -34,6 +34,8 @@ creates this block of code:
   ]);
 ?>
 ~~~~
+The filtering array is created and the criteria is entered into the first filter array item. You can then edit the second set of values for the next array in your code editor.
+
 # 8/6/20 Update
 Corrects the closing brackets for `perch_layout` when there are no arguments.
 # 4/13/20 Update
