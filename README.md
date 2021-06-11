@@ -20,7 +20,7 @@ creates this block of code:
 	 'sort-type'     => 'alpha',
 	 'filter'        => [
 	 [
-	 'filter'        => 'DisplayFrom',
+	 'filter'        => 'displayFrom',
 	 'match'         => 'gte',
 	 'value'         => date('Y-m-d'),
 	 ],
