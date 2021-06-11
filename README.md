@@ -9,7 +9,7 @@ You can get it here:
 <http://www.ergonis.com/downloads/>
 # 6/11/21 Update
 Now supports the creation of filtering arrays for filtering for multiple fields in `perch_content_custom`, `perch_collection`, and `perch_shop_product`expansions. Adds support for `AND/OR` matching and `'filter-mode' => 'ungrouped'` on multiple field filtering.
-![PERCH Filtering Arrays](https://www.lewisarts.com/perchCollection_06_11_21.png)
+![PERCH Filtering Arrays](https://www.lewisarts.com/perchCollection_06_11_21b.png)
 creates this block of code:
 ~~~~
 <?php 
